@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalog-db
+  namespace: booknest
+  labels:
+    app: catalog-db
+    part-of: booknest
+spec:
+  selector:
+    app: catalog-db
+  ports:
+    - name: mongo
+      port: 27017
+      targetPort: mongo

@@ -1,0 +1,1 @@
+"""BookNest catalog bounded context."""
